@@ -1,7 +1,248 @@
+@font-face {
+  font-family: "DMSerifDisplay-Regular";
+  font-display: swap;
+  font-weight: 400;
+  src: url("./../../fonts/DMSerifDisplay-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rubik";
+  font-display: swap;
+  font-weight: 300;
+  src: url("./../../fonts/Rubik-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rubik";
+  font-display: swap;
+  font-weight: 400;
+  src: url("./../../fonts/Rubik-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rubik";
+  font-display: swap;
+  font-weight: 500;
+  src: url("./../../fonts/Rubik-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rubik";
+  font-display: swap;
+  font-weight: 700;
+  src: url("./../../fonts/Rubik-Bold.ttf") format("truetype");
+}
+.text-h1 {
+  font-size: 1.6rem;
+  line-height: 100%;
+  font-weight: 400;
+  color: white;
+}
+
+.text-h2 {
+  font-size: 1.4rem;
+  line-height: 110%;
+  font-weight: 400;
+  color: white;
+}
+
+.text-menu__normal {
+  font-size: 1.6rem;
+  line-height: 19px;
+  font-weight: normal;
+  color: white;
+}
+
+.text-menu__bold {
+  font-size: 1.6rem;
+  line-height: 19px;
+  font-weight: bold;
+  color: white;
+}
+
+.text-title {
+  font-size: 1.4rem;
+  line-height: 100%;
+  font-weight: bold;
+  color: orange;
+}
+
+.text-title__summary {
+  font-size: 1.2rem;
+  line-height: 100%;
+  font-weight: normal;
+}
+
+.text-title__summary-bold {
+  font-size: 1.3rem;
+  line-height: 100%;
+  font-weight: bold;
+}
+
+.text-question {
+  font-size: 1.3rem;
+  line-height: 100%;
+  font-weight: 500;
+}
+
+.text-answer {
+  font-size: 1.3rem;
+  line-height: 100%;
+  font-weight: 500;
+}
+
+.text-client {
+  font-size: 1.4rem;
+  line-height: 100%;
+  font-weight: 300;
+}
+
+.text-client_name {
+  font-size: 1.4rem;
+  line-height: 100%;
+  font-weight: bold;
+}
+
+@media (min-width: 640px) {
+  .text-h1 {
+    font-size: 2.2rem;
+  }
+
+  .text-h2 {
+    font-size: 2.4rem;
+    line-height: 110%;
+  }
+
+  .text-title {
+    font-size: 1.5rem;
+  }
+
+  .text-title__summary {
+    font-size: 1.3rem;
+    line-height: 105%;
+  }
+
+  .text-title__summary-bold {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .text-question + .text-answer {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+  }
+
+  .text-client + .text-client_name {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+@media (min-width: 768px) {
+  .text-h1 {
+    font-size: 4rem;
+  }
+
+  .text-h2 {
+    font-size: 2.8rem;
+    line-height: 120%;
+  }
+
+  .text-title {
+    font-size: 1.8rem;
+    line-height: 26px;
+  }
+
+  .text-title__summary {
+    font-size: 1.6rem;
+    line-height: 110%;
+  }
+
+  .text-title__summary-bold {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+
+  .text-question + .text-answer {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+
+  .text-client + .text-client_name {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+}
+@media (min-width: 960px) {
+  .text-h1 {
+    font-size: 6rem;
+  }
+
+  .text-h2 {
+    font-size: 3.6rem;
+    line-height: 130%;
+  }
+
+  .text-title {
+    font-size: 2.1rem;
+    line-height: 32px;
+  }
+
+  .text-title__summary {
+    font-size: 1.8rem;
+    line-height: 32px;
+  }
+
+  .text-title__summary-bold {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+
+  .text-question + .text-answer {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .text-client + .text-client_name {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+}
+@media (min-width: 1280px) {
+  .text-h1 {
+    font-size: 10rem;
+  }
+
+  .text-h2 {
+    font-size: 4.8rem;
+    line-height: 140%;
+  }
+
+  .text-title {
+    font-size: 2.4rem;
+    line-height: 4rem;
+  }
+
+  .text-title__summary {
+    font-size: 1.8rem;
+    line-height: 4rem;
+  }
+
+  .text-title__summary-bold {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+
+  .text-question + .text-answer {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  .text-client + .text-client_name {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+}
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 /*# sourceMappingURL=style.css.map */
