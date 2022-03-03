@@ -1,0 +1,30 @@
+.info-box {
+    display: flex;
+    background-color: $color-peach-100;
+    opacity: 0.4;
+
+    &__text {
+        padding: 3rem 5.5rem;
+        color: $color-dark-100;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+    }
+
+    &--blue {
+        display: flex;
+        margin: 10rem 9.5rem 0 0;
+    }
+
+    &__text--blue {
+        color: $color-white-100;
+        padding-left: 4rem;
+        margin: 1rem 0;
+        font-size: 2rem;
+        line-height: 3rem;
+        text-align: justify;
+        align-items: center;
+    }
+}
