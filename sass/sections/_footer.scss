@@ -1,0 +1,24 @@
+.footer {
+    // TODO remove this padding when finish
+    padding-top: 100px;
+    padding-right: 100px;
+
+    &__wrapper {
+        max-width: 1400px;
+        background-color: $color-dark-200;
+        border-top-right-radius: 3rem;
+    }
+
+    &__container {
+        margin-right: 136px;
+        margin-left: 240px;
+    }
+
+    &__content {
+        max-width: 1024px;
+    }
+
+    &__info-wrapper {
+        display: flex;
+    }
+}
