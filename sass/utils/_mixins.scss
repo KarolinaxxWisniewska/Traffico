@@ -3,7 +3,7 @@
     line-height: $line-height;
     font-weight: $font-weight;
 
-    @if ($color !=$color-black) {
+    @if ($color-white !=$color-black) {
         color: $color;
     }
 }

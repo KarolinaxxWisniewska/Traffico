@@ -1,6 +1,6 @@
 .info-box {
     display: flex;
-    background-color: $color-peach-100;
+    background-color: $color-light-300;
     opacity: 0.4;
 
     &__text {
@@ -19,7 +19,7 @@
     }
 
     &__text--blue {
-        color: $color-white-100;
+        color: $color-white;
         padding-left: 4rem;
         margin: 1rem 0;
         font-size: 2rem;
