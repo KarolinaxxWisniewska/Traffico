@@ -1,0 +1,24 @@
+@media (min-width: 1400px) {
+    @keyframes peopleAppear {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 100;
+        }
+    }
+
+    .header {
+        .menu {
+            .img__people {
+                display: inline;
+                position: absolute;
+                top: 40rem;
+                left: 74.5rem;
+                z-index: 4;
+                animation: peopleAppear 2s ease-in;
+            }
+        }
+    }
+}

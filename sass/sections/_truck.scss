@@ -1,0 +1,25 @@
+@media (min-width: 1400px) {
+    @keyframes truckRide {
+        0% {
+            left: -41.4rem;
+        }
+
+        100% {
+
+            left: -6.4rem;
+        }
+    }
+
+    .header {
+        .menu {
+            .truck {
+                display: inline;
+                position: absolute;
+                top: 80rem;
+                left: -6.4rem;
+                z-index: 5;
+                animation: truckRide 1.5s ease-out;
+            }
+        }
+    }
+}
