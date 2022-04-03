@@ -50,7 +50,7 @@
 }
 
 .text-l {
-    @include text(1.4rem, 100%, bold, orange);
+    @include text(2rem, 100%, bold, orange);
 }
 
 .m-regular-200 {
@@ -87,9 +87,6 @@
         line-height: 110%;
     }
 
-    .text-l {
-        font-size: 1.5rem;
-    }
 
     .m-regular-200 {
         font-size: 1.3rem;
@@ -123,7 +120,7 @@
     }
 
     .text-l {
-        font-size: 1.8rem;
+
         line-height: 26px;
     }
 
@@ -209,7 +206,7 @@
         line-height: 3.6rem;
     }
 
-    .text-m-bold+.text-m-regular {
+    .text-m-bold .text-m-regular {
         font-size: 1.8rem;
         line-height: 3rem;
     }
