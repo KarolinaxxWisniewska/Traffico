@@ -267,6 +267,7 @@ ul {
   background-color: #EE4D47;
   color: #fff;
   border-radius: 0.5rem;
+  border: 0px;
   letter-spacing: 0.05px;
 }
 
@@ -332,7 +333,6 @@ ul {
   flex-direction: column;
   position: relative;
   padding: 1rem;
-  background: linear-gradient(297.17deg, #FFEDBA 6.67%, #EE4D47 91.82%);
   background-repeat: no-repeat;
 }
 .header .menu {
@@ -406,25 +406,27 @@ ul {
     align-items: flex-start;
   }
   .header .menu {
-    padding-left: 7rem;
+    padding-left: 5rem;
   }
   .header .menu .background__image {
     max-width: 100%;
     display: block;
     position: absolute;
+    left: -5.5rem;
   }
   .header .menu .nav {
     margin: 0 rem;
+    padding-left: 2rem;
   }
   .header .menu .nav .contact {
     display: inline;
   }
   .header .menu .nav .header__menu .menu__item {
-    margin: 1rem 3.5rem;
+    margin: 1rem 2rem;
   }
   .header .header__cta {
     align-items: flex-start;
-    padding-left: 7rem;
+    padding-left: 5rem;
   }
   .header .header__cta .paragraph {
     text-align: left;
@@ -435,17 +437,17 @@ ul {
     height: 60rem;
   }
   .header .menu {
-    padding-left: 12.7rem;
+    padding-left: 4.5rem;
   }
-  .header .menu .nav {
-    padding: 0 15rem;
+  .header .menu .nav .menu__item {
+    padding: 1rem 3rem;
   }
   .header .menu .nav .contact {
     margin-left: 5rem;
   }
   .header .header__cta {
-    padding-left: 12.7rem;
-    padding-top: 7rem;
+    padding-left: 7.5rem;
+    padding-top: 3rem;
   }
 }
 @media (min-width: 1280px) {
@@ -455,11 +457,8 @@ ul {
   .header .menu {
     padding-left: 15.7rem;
   }
-  .header .menu .nav {
-    padding: 0 0 0 27.2rem;
-  }
   .header .menu .nav .header__menu .menu__item {
-    margin: 0 5rem;
+    margin: 0 3rem;
   }
   .header .header__cta {
     padding-left: 15.7rem;
@@ -467,8 +466,14 @@ ul {
   }
 }
 @media (min-width: 1400px) {
+  .header {
+    margin-bottom: 50rem;
+  }
   .header .menu {
     padding-left: 20.7rem;
+  }
+  .header .menu .nav .header__menu .menu__item {
+    margin: 0 5rem;
   }
   .header .menu .truck {
     display: inline;
@@ -534,8 +539,7 @@ ul {
   flex-direction: column;
 }
 .post .post__img {
-  max-width: 100%;
-  height: auto;
+  max-width: 20rem;
 }
 .post .post__info {
   display: flex;

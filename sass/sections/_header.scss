@@ -4,7 +4,6 @@
     flex-direction: column;
     position: relative;
     padding: 1rem;
-    background: linear-gradient(297.17deg, #FFEDBA 6.67%, #EE4D47 91.82%);
     background-repeat: no-repeat;
 
     .menu {
@@ -39,7 +38,6 @@
             z-index: 2;
 
             .header__menu {
-
                 display: flex;
                 align-items: center;
 
@@ -94,16 +92,18 @@
         align-items: flex-start;
 
         .menu {
-            padding-left: 7rem;
+            padding-left: 5rem;
 
             .background__image {
                 max-width: 100%;
                 display: block;
                 position: absolute;
+                left: -5.5rem;
             }
 
             .nav {
                 margin: 0 rem;
+                padding-left: 2rem;
 
                 .contact {
                     display: inline;
@@ -111,7 +111,7 @@
 
                 .header__menu {
                     .menu__item {
-                        margin: 1rem 3.5rem;
+                        margin: 1rem 2rem;
                     }
                 }
             }
@@ -119,7 +119,7 @@
 
         .header__cta {
             align-items: flex-start;
-            padding-left: 7rem;
+            padding-left: 5rem;
 
             .paragraph {
                 text-align: left;
@@ -133,10 +133,13 @@
         height: 60rem;
 
         .menu {
-            padding-left: 12.7rem;
+            padding-left: 4.5rem;
 
             .nav {
-                padding: 0 15rem;
+
+                .menu__item {
+                    padding: 1rem 3rem;
+                }
 
                 .contact {
                     margin-left: 5rem;
@@ -145,8 +148,8 @@
         }
 
         .header__cta {
-            padding-left: 12.7rem;
-            padding-top: 7rem;
+            padding-left: 7.5rem;
+            padding-top: 3rem;
         }
     }
 }
@@ -159,11 +162,9 @@
             padding-left: 15.7rem;
 
             .nav {
-                padding: 0 0 0 27.2rem;
-
                 .header__menu {
                     .menu__item {
-                        margin: 0 5rem;
+                        margin: 0 3rem;
                     }
                 }
             }
@@ -178,8 +179,19 @@
 
 @media (min-width: 1400px) {
     .header {
+        margin-bottom: 50rem;
+
         .menu {
             padding-left: 20.7rem;
+
+            .nav {
+                .header__menu {
+                    .menu__item {
+                        margin: 0 5rem;
+                    }
+                }
+            }
+
 
             .truck {
                 display: inline;
