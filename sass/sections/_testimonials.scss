@@ -1,0 +1,41 @@
+.testimonials {
+  @include flex(row, center, flex-start);
+  margin-top: 18rem;
+
+  &__head {
+    margin-right: 2rem;
+
+    .p_orange {
+      margin-bottom: 4.4rem;
+    }
+  }
+
+  &__clients {
+    &__list {
+      @include flex(row, center, center);
+
+      &--item {
+        padding: 2rem;
+        max-width: 42rem;
+        max-height: 36rem;
+        margin-right: 2rem;
+        background: $color-white;
+        box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+        border-radius: 10px;
+        border: none;
+
+        &__content {
+          margin-bottom: 6rem;
+        }
+
+        &__client {
+          @include flex(row, center, center);
+
+          .client {
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
