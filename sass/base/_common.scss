@@ -2,7 +2,16 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    font-family: $font-primary, sans-serif;
+    background-color: $color-light-400;
+}
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
