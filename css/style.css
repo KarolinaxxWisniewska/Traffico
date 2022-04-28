@@ -472,6 +472,7 @@ a {
   position: relative;
   padding: 1rem;
   background-repeat: no-repeat;
+  background: linear-gradient(297.17deg, #FFEDBA 6.67%, #EE4D47 91.82%);
 }
 .header .menu {
   display: flex;
@@ -542,6 +543,7 @@ a {
     height: 51rem;
     justify-content: flex-start;
     align-items: flex-start;
+    background: none;
   }
   .header .menu {
     padding-left: 5rem;
@@ -611,7 +613,7 @@ a {
     padding-left: 20.7rem;
   }
   .header .menu .nav .header__menu .menu__item {
-    margin: 0 5rem;
+    margin-left: 10rem;
   }
   .header .menu .truck {
     display: inline;
@@ -666,34 +668,42 @@ a {
   font-family: "Rubik";
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.post .post__img {
-  max-width: 20rem;
+.post__img {
+  max-width: 30rem;
 }
-.post .post__info {
+.post__info {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 3rem;
 }
-.post .post__info p {
+.post__info p {
   text-align: center;
 }
-.post .post__info .post__text {
+.post__info .post__text {
   padding-top: 2rem;
+  line-height: 3rem;
 }
-.post .post__info .info-box--blue {
+.post__info .info-box--blue {
   margin: 0;
 }
-.post .post__info .footer__info-box--blue {
-  padding-top: 1rem;
+.post__info .footer__info-box--blue {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  background-color: #FCDDD4;
+  border-radius: 1rem;
 }
-.post .post__info .footer__info-box--blue .hr {
+.post__info .footer__info-box--blue .hr {
   width: 2rem;
-  height: auto;
+  height: 7rem;
   margin-right: 0.5rem;
 }
-.post .post__info .footer__info-box--blue .text-left {
+.post__info .footer__info-box--blue .text-left {
   text-align: left;
+  line-height: 2rem;
 }
 
 .testimonials {
