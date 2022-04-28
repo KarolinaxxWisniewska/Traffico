@@ -5,6 +5,8 @@
     position: relative;
     padding: 1rem;
     background-repeat: no-repeat;
+    background: linear-gradient(297.17deg, #FFEDBA 6.67%, #EE4D47 91.82%);
+    ;
 
     .menu {
         display: flex;
@@ -73,6 +75,7 @@
     .header {
         padding: 3rem 1rem;
 
+
         .menu {
             flex-direction: row;
 
@@ -90,6 +93,7 @@
         height: 51rem;
         justify-content: flex-start;
         align-items: flex-start;
+        background: none;
 
         .menu {
             padding-left: 5rem;
