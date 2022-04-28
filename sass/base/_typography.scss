@@ -2,36 +2,68 @@
     font-family: "DMSerifDisplay-Regular";
     font-display: swap;
     font-weight: 400;
-    src: url("./../../fonts/DMSerifDisplay-Regular.ttf") format("truetype"),
+    src: url(./../../fonts/DMSerifDisplay-Regular.ttf) format("truetype"),
+}
+
+@font-face {
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./../../fonts/DMSerifDisplay-Regular.ttf);
 }
 
 @font-face {
     font-family: "Rubik";
     font-display: swap;
     font-weight: 300;
-    src: url("./../../fonts/Rubik-Light.ttf") format("truetype"),
+    src: url(./../../fonts/Rubik-Light.ttf) format("truetype"),
 }
 
 @font-face {
     font-family: "Rubik";
     font-display: swap;
     font-weight: 400;
-    src: url("./../../fonts/Rubik-Regular.ttf") format("truetype"),
+    src: url(./../../fonts/Rubik-Regular.ttf) format("truetype"),
 }
 
 @font-face {
     font-family: "Rubik";
     font-display: swap;
     font-weight: 500;
-    src: url("./../../fonts/Rubik-Medium.ttf") format("truetype"),
+    src: url(./../../fonts/Rubik-Medium.ttf) format("truetype"),
 }
 
 @font-face {
     font-family: "Rubik";
     font-display: swap;
     font-weight: 700;
-    src: url("./../../fonts/Rubik-Bold.ttf") format("truetype"),
+    src: url(./../../fonts/Rubik-Bold.ttf) format("truetype"),
 }
+
+h2 {
+    @include font(30px, 43px, 400, $color-dark-100, $font-secondary);
+}
+
+h3 {
+    @include font(16px, 30px, 700, $color-red-200);
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+.p_testi {
+    @include font(14px, 30px, 300, $color-dark-100);
+
+    &_bold {
+        @include font(14px, 30px, 700, $color-dark-100);
+
+    }
+}
+
+.p_foot {
+    @include font(14px, 25px, 400, $color-white);
+}
+
 
 .text-xl {
     @include text(4rem, 100%, 400, white);
@@ -50,7 +82,7 @@
 }
 
 .text-l {
-    @include text(2rem, 100%, bold, orange);
+    @include text(2rem, 100%, bold, #EE4D47);
 }
 
 .m-regular-200 {
