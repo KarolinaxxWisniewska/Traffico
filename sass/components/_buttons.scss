@@ -1,15 +1,11 @@
 .btn {
-    display: flex;
-    align-items: center;
-    padding: 21px 24px 20px 24px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.6rem;
-    line-height: 1.9rem;
+    max-width: 22rem;
+    max-height: 6rem;
+    @include font(12px, 17px, 700, $color-white);
+    padding: 1rem 1.5rem;
     text-transform: uppercase;
     background-color: $color-red-100;
-    color: $color-white;
     border-radius: 0.5rem;
     letter-spacing: 0.05px;
+    border: none;
 }

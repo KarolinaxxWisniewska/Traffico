@@ -37,32 +37,39 @@
 }
 h2 {
   font-family: "DM Serif Display";
-  font-size: 48px;
-  line-height: 63px;
+  font-size: 30px;
+  line-height: 43px;
   font-weight: 400;
   color: #402B2B;
 }
 
 h3 {
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 16px;
+  line-height: 30px;
   font-weight: 700;
   color: #ED4D47;
-  letter-spacing: 1.1;
+  letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
 
 .p_testi {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 30px;
   font-weight: 300;
   color: #402B2B;
 }
 .p_testi_bold {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 30px;
   font-weight: 700;
   color: #402B2B;
+}
+
+.p_foot {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #fff;
 }
 
 .text-xl {
@@ -302,82 +309,159 @@ a {
 }
 
 .btn {
-  display: flex;
-  align-items: center;
-  padding: 21px 24px 20px 24px;
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1.6rem;
-  line-height: 1.9rem;
+  max-width: 22rem;
+  max-height: 6rem;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 700;
+  color: #fff;
+  padding: 1rem 1.5rem;
   text-transform: uppercase;
   background-color: #EE4D47;
-  color: #fff;
   border-radius: 0.5rem;
   letter-spacing: 0.05px;
+  border: none;
 }
 
 .hr {
   width: 1rem;
-  height: 16rem;
+  height: 12rem;
   background-color: #EE4D47;
+  border: none;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
 
-.info-box {
-  display: flex;
-  background-color: #FCDDD4;
-  opacity: 0.4;
-}
-.info-box__text {
-  padding: 3rem 5.5rem;
-  color: #402B2B;
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 2.4rem;
-  line-height: 3.6rem;
-}
-.info-box--blue {
-  display: flex;
-  margin: 10rem 9.5rem 0 0;
-}
-.info-box__text--blue {
-  color: #fff;
-  padding-left: 4rem;
-  margin: 1rem 0;
-  font-size: 2rem;
-  line-height: 3rem;
-  text-align: justify;
-  align-items: center;
-}
-
 .arrow {
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
   margin: 0 auto;
   fill: #ED4D47;
 }
 
-.footer {
-  padding-top: 100px;
-  padding-right: 100px;
+.s__media {
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0.3rem;
+  background: #ED4D47;
+  border: none;
+  border-radius: 0.8rem;
+  fill: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    padding: 0 4rem;
+  }
+}
+@media screen and (min-width: 850px) {
+  .container {
+    padding: 0 6rem;
+  }
 }
 .footer__wrapper {
-  max-width: 1400px;
+  position: relative;
+  max-width: 140rem;
   background-color: #0F264C;
   border-top-right-radius: 3rem;
 }
-.footer__container {
-  margin-right: 136px;
-  margin-left: 240px;
-}
 .footer__content {
-  max-width: 1024px;
+  max-width: 102.4rem;
+  margin-bottom: 5rem;
 }
-.footer__info-wrapper {
+.footer__content .mobile {
+  max-width: 50%;
+  position: absolute;
+  top: -7rem;
+}
+.footer__txt {
+  max-width: 30rem;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer__txt__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 104rem;
+  margin: 8rem 3rem 0 3rem;
+}
+.footer__txt__info p {
+  margin-left: 3rem;
+}
+.footer__txt__form {
+  max-width: 55rem;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+  border-radius: 10px;
+}
+.footer__txt__form .input {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #402B2B;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  background: #fff;
+  border: 1px solid #ED4D47;
+  box-sizing: border-box;
+  box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.2);
+  border-radius: 5px;
+}
+.footer__txt__form .label {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #402B2B;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+.footer__nav-img {
+  max-width: 30%;
+  margin: 3rem 0;
+}
+.footer__nav__list-item {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.copyright {
+  max-width: 120rem;
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright__text {
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 300;
+  color: #0F264C;
+}
+.copyright__media {
+  width: 17rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .header {
@@ -535,15 +619,6 @@ a {
     padding-left: 20.7rem;
   }
 }
-.footer__form {
-  background-color: #fff;
-}
-
-.footer__nav {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 @media (min-width: 1400px) {
   @keyframes truckRide {
     0% {
@@ -619,20 +694,33 @@ a {
 
 .testimonials {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 18rem;
+  margin: 10rem 0 18rem 0;
 }
 .testimonials__head {
   margin-right: 2rem;
 }
 .testimonials__head .p_orange {
-  margin-bottom: 4.4rem;
+  margin-bottom: 3rem;
+}
+.testimonials__clients {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.testimonials__clients__switch {
+  margin-bottom: 3rem;
+}
+.testimonials__clients__switch .arrow-left {
+  margin-right: 2rem;
 }
 .testimonials__clients__list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -640,23 +728,35 @@ a {
   padding: 2rem;
   max-width: 42rem;
   max-height: 36rem;
-  margin-right: 2rem;
+  margin-bottom: 2rem;
   background: #fff;
   box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
   border-radius: 10px;
   border: none;
 }
 .testimonials__clients__list--item__content {
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 .testimonials__clients__list--item__client {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .testimonials__clients__list--item__client .client {
   margin-right: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .testimonials__clients__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .testimonials__clients__list--item {
+    margin-right: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
