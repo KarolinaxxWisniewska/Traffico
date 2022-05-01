@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="header container">
+  <header class="header">
     <div class="menu">
       <img class="logo" src="./public/images/logo.png" alt="Logotyp trafico" />
       <nav class="nav">
@@ -32,7 +32,7 @@
       <button class="cta btn">GET STARTED</button>
     </div>
   </header>
-  <main class="main container">
+  <main class="main">
     <section class="post">
       <img class="post__img" src="./public/images/Illustration.png" alt="">
       <div class="post__info">
@@ -49,6 +49,7 @@
         </div>
       </div>
     </section>
+
     <section class="testimonials">
       <div class="testimonials__head">
         <h3 class="p_orange">Testimonials</h3>
@@ -83,6 +84,7 @@
             <div class="testimonials__clients__list--item__client">
               <img class="client" src="./public/images/prfile picture 2.webp" alt="client image">
               <p class="client__name p_testi_bold">Simon Sandberg</p>
+
             </div>
           </li>
           <li class="testimonials__clients__list--item">
@@ -100,10 +102,10 @@
   </main>
   <footer class="footer ">
     <div class="footer__wrapper">
+      <figure>
+        <img class="mobile" src="./public/images/footer mobile.webp" alt="mobile image">
+      </figure>
       <div class="footer__content">
-        <figure>
-          <img class="mobile" src="./public/images/footer mobile.webp" alt="mobile image">
-        </figure>
         <section class="footer__txt">
           <div class="footer__txt__info">
             <hr class="hr" />
@@ -112,18 +114,20 @@
               quickly, contact us for a quote today!
             </p>
           </div>
+        </section>
+        <form class="footer__txt__form form">
+          <div class="form__field ">
+            <label for="text" class="label">Name</label>
+            <input class="input" type="text" placeholder="Name" value="Hendrik Larsson" />
+          </div>
+          <div class="form__field">
+            <label for="email" class="label">Email address</label>
+            <input class="input" text="email" placeholder="Email address" />
+          </div>
+          <button class="form__button btn">Get started &rarr;</button>
+        </form>
       </div>
-      <form class="footer__txt__form form">
-        <div class="form__field ">
-          <label for="text" class="label">Name</label>
-          <input class="input" type="text" placeholder="Name" value="Hendrik Larsson" />
-        </div>
-        <div class="form__field">
-          <label for="email" class="label">Email address</label>
-          <input class="input" text="email" placeholder="Email address" />
-        </div>
-        <button class="form__button btn">Get started &rarr;</button>
-      </form>
+
 
 
       </section>
@@ -151,6 +155,7 @@
         </svg>
       </div>
     </section>
+
   </footer>
 </body>
 
