@@ -46,7 +46,7 @@ h2 {
 }
 
 h3 {
-    @include font(16px, 30px, 700, $color-red-200);
+    @include font(18px, 30px, 700, $color-red-200);
     letter-spacing: 0.3rem;
     text-transform: uppercase;
 }
@@ -61,7 +61,7 @@ h3 {
 }
 
 .p_foot {
-    @include font(14px, 25px, 400, $color-white);
+    @include font(16px, 25px, 400, $color-white);
 }
 
 

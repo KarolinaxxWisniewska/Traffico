@@ -1,6 +1,6 @@
 .testimonials {
   @include flex(column, center, flex-start);
-  margin: 10rem 0 18rem 0;
+  margin: 10rem 0 27rem 0;
 
   &__head {
     margin-right: 2rem;
@@ -61,6 +61,39 @@
         &--item {
           margin-right: 2rem;
         }
+      }
+    }
+
+    &__head {
+      max-width: 30rem;
+
+      .p_orange {
+        font-size: 20px;
+        margin-bottom: 4rem;
+      }
+
+      &__header {
+        font-size: 40px;
+
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .testimonials {
+    flex-direction: row;
+
+    &__head {
+      max-width: 55rem;
+
+      .p_orange {
+        font-size: 24px;
+        margin-bottom: 4rem;
+      }
+
+      &__header {
+        font-size: 48px;
       }
     }
   }

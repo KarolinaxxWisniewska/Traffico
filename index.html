@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/style.css" />
   <title>Traffico</title>
 </head>
+
 <body>
   <header class="header">
     <div class="menu">
@@ -101,10 +102,10 @@
   </main>
   <footer class="footer ">
     <div class="footer__wrapper">
+      <figure>
+        <img class="mobile" src="./public/images/footer mobile.webp" alt="mobile image">
+      </figure>
       <div class="footer__content">
-        <figure>
-          <img class="mobile" src="./public/images/footer mobile.webp" alt="mobile image">
-        </figure>
         <section class="footer__txt">
           <div class="footer__txt__info">
             <hr class="hr" />
@@ -113,18 +114,20 @@
               quickly, contact us for a quote today!
             </p>
           </div>
+        </section>
+        <form class="footer__txt__form form">
+          <div class="form__field ">
+            <label for="text" class="label">Name</label>
+            <input class="input" type="text" placeholder="Name" value="Hendrik Larsson" />
+          </div>
+          <div class="form__field">
+            <label for="email" class="label">Email address</label>
+            <input class="input" text="email" placeholder="Email address" />
+          </div>
+          <button class="form__button btn">Get started &rarr;</button>
+        </form>
       </div>
-      <form class="footer__txt__form form">
-        <div class="form__field ">
-          <label for="text" class="label">Name</label>
-          <input class="input" type="text" placeholder="Name" value="Hendrik Larsson" />
-        </div>
-        <div class="form__field">
-          <label for="email" class="label">Email address</label>
-          <input class="input" text="email" placeholder="Email address" />
-        </div>
-        <button class="form__button btn">Get started &rarr;</button>
-      </form>
+
 
 
       </section>
